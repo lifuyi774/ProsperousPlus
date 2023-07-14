@@ -1,0 +1,29 @@
+Dec 05, 2017 4:21:17 PM org.tmatesoft.svn.core.internal.util.DefaultSVNDebugLogger log
+SEVERE: CLI: de/regnis/q/sequence/line/QSequenceLineRAData
+java.lang.NoClassDefFoundError: de/regnis/q/sequence/line/QSequenceLineRAData
+	at org.tmatesoft.svn.cli.svn.SVNCommandEnvironment.createClientOptions(SVNCommandEnvironment.java:244)
+	at org.tmatesoft.svn.cli.AbstractSVNCommandEnvironment.initClientManager(AbstractSVNCommandEnvironment.java:208)
+	at org.tmatesoft.svn.cli.svn.SVNCommandEnvironment.initClientManager(SVNCommandEnvironment.java:168)
+	at org.tmatesoft.svn.cli.AbstractSVNLauncher.run(AbstractSVNLauncher.java:78)
+	at org.tmatesoft.svn.cli.svn.SVN.main(SVN.java:26)
+	at org.tmatesoft.svn.cli.SVN.main(SVN.java:22)
+Caused by: java.lang.ClassNotFoundException: de.regnis.q.sequence.line.QSequenceLineRAData
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 6 more
+
+java.lang.NoClassDefFoundError: de/regnis/q/sequence/line/QSequenceLineRAData
+	at org.tmatesoft.svn.cli.svn.SVNCommandEnvironment.createClientOptions(SVNCommandEnvironment.java:244)
+	at org.tmatesoft.svn.cli.AbstractSVNCommandEnvironment.initClientManager(AbstractSVNCommandEnvironment.java:208)
+	at org.tmatesoft.svn.cli.svn.SVNCommandEnvironment.initClientManager(SVNCommandEnvironment.java:168)
+	at org.tmatesoft.svn.cli.AbstractSVNLauncher.run(AbstractSVNLauncher.java:78)
+	at org.tmatesoft.svn.cli.svn.SVN.main(SVN.java:26)
+	at org.tmatesoft.svn.cli.SVN.main(SVN.java:22)
+Caused by: java.lang.ClassNotFoundException: de.regnis.q.sequence.line.QSequenceLineRAData
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 6 more

@@ -1,0 +1,6 @@
+## Model construction (nb;svm;rf;lr;knn;xgboost;catboost;lightgbm;AODE)
+ML=nb;svm;rf;lr;knn;xgboost;catboost;lightgbm
+
+## K-fold Cross-Validation(10 or 5)
+Validation=5
+
