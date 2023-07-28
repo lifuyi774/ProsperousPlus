@@ -81,7 +81,7 @@ optional arguments:
   
 “--SHAP”    Select Yes or No to control the program to calculate SHAP.
   
-“--PLOT”    Selecting Yes or No to control whether the program computes the visualization of cleavage sites.
+“--PLOT”    Select Yes or No to control whether the program computes the visualization of cleavage sites.
   
 “--processNum”   The number of processes in the program. Note: Integer values represent the number of processes. "processNum" setting can speed up the running efficiency of the program, but it also takes up more computing resources.
 
