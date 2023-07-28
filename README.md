@@ -31,16 +31,18 @@ Proteases contribute to a broad spectrum of cellular functions. Given a relative
 
     Free download from https://www.anaconda.com/download
 
-2. Create the prosperousplus environment.
+    See https://docs.anaconda.com/free/anaconda/install/index.html
+
+3. Create the prosperousplus environment.
 
     ```conda create -n prosperousplus python=3.7```
 
-3. Activate the prosperousplus environment and install the dependencies.
+4. Activate the prosperousplus environment and install the dependencies.
 
     ```conda activate prosperousplus```
 
     ```pip install -r requirements.txt```
-4. Install and configure your java environment.
+5. Install and configure your java environment.
 
    See https://docs.oracle.com/en/java/javase/17/install/overview-jdk-installation.html
 
