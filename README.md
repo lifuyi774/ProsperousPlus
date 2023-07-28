@@ -57,31 +57,31 @@ as follows:
 usage: it's usage tip.
 >
 optional arguments:
--h, --help    Show this help message and exit
+“-h”, “--help”    Show this help message and exit
 >
---inputType    fasta or peptide.
+“--inputType”    fasta or peptide.
 >
---config    The path to the config file.
+“--config”    The path to the config file.
   
---trainfile    The path to the training set file containing the sequences in fasta(peptide) format, where the length of the sequences is 8, 10, 12, 14, 16, 18 or 20.
+“--trainfile”    The path to the training set file containing the sequences in fasta(peptide) format, where the length of the sequences is 8, 10, 12, 14, 16, 18 or 20.
   
---protease    The protease you want to predict cleavage to, eg: A01.001, Or if you want to build a new model, please create a name. There should no space in the model name.
+“--protease”    The protease you want to predict cleavage to, eg: A01.001, Or if you want to build a new model, please create a name. There should no space in the model name.
                 
---outputpath    The path of output.
+“--outputpath”    The path of output.
   
---testfile    The path to the test set file containing the sequences in fasta(peptide) format, where the length of the sequences is 8, 10, 12, 14, 16, 18 or 20. If not, it will be divided from the training set.
+“--testfile”    The path to the test set file containing the sequences in fasta(peptide) format, where the length of the sequences is 8, 10, 12, 14, 16, 18 or 20. If not, it will be divided from the training set.
   
---predictfile    The path to the prediction data file containing the sequences in fasta(peptide) format, where the length of the sequences is 8, 10, 12, 14, 16, 18 or 20.
+“--predictfile”    The path to the prediction data file containing the sequences in fasta(peptide) format, where the length of the sequences is 8, 10, 12, 14, 16, 18 or 20.
   
---mode    Choose  the program module to run. Three modes can be used: prediction, TrainYourModel, UseYourOwnModel. Only select one mode each time.
+“--mode”    Choose  the program module to run. Three modes can be used: prediction, TrainYourModel, UseYourOwnModel. Only select one mode each time.
   
---modelfile    The path to the trained model generated from the TrainYourModel module. eg 0_model
+“--modelfile”    The path to the trained model generated from the TrainYourModel module. eg 0_model
   
---SHAP    Select Yes or No to control the program to calculate SHAP.
+“--SHAP”    Select Yes or No to control the program to calculate SHAP.
   
---PLOT    Selecting Yes or No to control whether the program computes the visualization of cleavage sites.
+“--PLOT”    Selecting Yes or No to control whether the program computes the visualization of cleavage sites.
   
---processNum    The number of processes in the program. Note: Integer values represent the number of processes. "processNum" setting can speed up the running efficiency of the program, but it also takes up more computing resources.
+“--processNum”   The number of processes in the program. Note: Integer values represent the number of processes. "processNum" setting can speed up the running efficiency of the program, but it also takes up more computing resources.
 
 ## Examples:
 
