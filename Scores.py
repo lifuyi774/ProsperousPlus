@@ -526,7 +526,7 @@ def IC50(predictpeptide, length, trainpeptide, matrix):
                     continue
                 PSSMscore += dict_AAPSSM[eachseq[i]][i]
             bindingscore = PSSMscore / int(length)
-            IC50score = math.pow(50000, (0.8 - bindingscore)) / 1.6
+            IC50score = math.pow(50000, (0.8 - bindingscore) / 1.6)
             dict_trainIC50.setdefault('pos', []).append((eachseq, IC50score))
         dict_trainIC50['neg'] = OrderedDict()
         for eachseq in negtrainpep:
@@ -536,7 +536,7 @@ def IC50(predictpeptide, length, trainpeptide, matrix):
                     continue
                 PSSMscore += dict_AAPSSM[eachseq[i]][i]
             bindingscore = PSSMscore / int(length)
-            IC50score = math.pow(50000, (0.8 - bindingscore)) / 1.6
+            IC50score = math.pow(50000, (0.8 - bindingscore) / 1.6)
             dict_trainIC50['neg'].setdefault('0', []).append((eachseq, IC50score))
         IC50matrix = {}
         IC50matrix['IC50'] = dict_AAPSSM
