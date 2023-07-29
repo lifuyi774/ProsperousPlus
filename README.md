@@ -55,7 +55,8 @@ To get the information the user needs to enter for help, run:
 
 as follows:
 
->python ProsperousPlus.py -h
+```python ProsperousPlus.py -h```
+>
 usage: it's usage tip.
 >
 optional arguments:
