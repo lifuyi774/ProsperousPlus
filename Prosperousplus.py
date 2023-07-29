@@ -429,7 +429,7 @@ if __name__ == "__main__":
                 
                 loadedModel = 'finalModels/' + proteasesOne + '/MLmodel'  
                 FEATURES=np.load('finalModels/' + proteasesOne +'/featuresSorted.npy')
-                print(FEATURES)
+                # print(FEATURES)
                 predata2=predata.loc[:, FEATURES]
                 clf = load_model(loadedModel)
                 preds = predict_model(clf, data=predata2,raw_score=True)
