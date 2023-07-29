@@ -192,6 +192,7 @@ def get_features(proteaseName, trainpeptide,coding_scheme,pre,matrix,length):
                 featueDic= NNS(trainpeptide,None, matrix)
                 NNS_f=[v[1] for v in featueDic['###']['pre']]        
                 featuresDF['NNS']=NNS_f
+            elif codS == 'PPM':
                 featueDic= PPM(trainpeptide,length, None,matrix)
                 PPM_f=[v[1] for v in featueDic['###']['pre']]          
                 featuresDF['PPM']=PPM_f               
