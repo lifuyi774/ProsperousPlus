@@ -606,7 +606,7 @@ if __name__ == "__main__":
             else:
                 print('Please check your upload files!')
                 sys.exit(1)
-            print(_modelfile)
+            # print(_modelfile)
             clf = load_model(_modelfile)
 
             preds = predict_model(clf, data=predata,raw_score=True)
