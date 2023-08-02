@@ -45,6 +45,9 @@ Proteases contribute to a broad spectrum of cellular functions. Given a relative
 5. Install and configure your java environment.
 
    See https://docs.oracle.com/en/java/javase/17/install/overview-jdk-installation.html
+6. Install and configure your R enviroment.
+
+   See https://cran.r-project.org/manuals.html
 
 ## Usage
 
