@@ -133,4 +133,4 @@ if save:
     pl.close()
 ```
 ## Copyright
-This software is for learning and research purposes only.Do not use it for commercial purpose.
+This software is for learning and research purposes only. Do not use it for commercial purposes!
