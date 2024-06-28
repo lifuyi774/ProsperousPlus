@@ -57,6 +57,7 @@ To get the information the user needs to enter for help, run:
     python ProsperousPlus.py -h
 
 as follows:
+
 ```cd ProsperousPlus```
 
 ```conda activate prosperousplus```
