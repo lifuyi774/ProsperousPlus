@@ -22,7 +22,7 @@ Proteases contribute to a broad spectrum of cellular functions. Given a relative
 * catboost 1.1
 * lightgbm 3.3.3
 * xgboost 1.6.2
-* Cython 0.29.36
+* Cython 0.29.35
 * pymrmr 0.1.11
 * redis 4.5.5
 
