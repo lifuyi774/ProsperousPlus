@@ -57,7 +57,8 @@ To get the information the user needs to enter for help, run:
     python ProsperousPlus.py -h
 
 as follows:
-
+```cd ProsperousPlus```
+```conda activate prosperousplus```
 ```python ProsperousPlus.py -h```
 >
 usage: it's usage tip.
@@ -92,10 +93,16 @@ optional arguments:
 ## Examples:
 
 ### Prediction:
+```cd ProsperousPlus```
+```conda activate prosperousplus```
 ```python ProsperousPlus.py --predictfile predict.fasta --outputpath results --inputType fasta --protease A01.001 --mode prediction --PLOT Yes --processNum 2```
 ### TrainYourModel:
+```cd ProsperousPlus```
+```conda activate prosperousplus```
 ```python ProsperousPlus.py --trainfile data/A01.001_trainset_1_1.fasta --outputpath resultfile --inputType fasta --protease A01.001 --mode TrainYourModel --SHAP Yes --processNum 2```
 ### UseYourOwnModel:
+```cd ProsperousPlus```
+```conda activate prosperousplus```
 ```python ProsperousPlus.py --predictfile predict.fasta --outputpath resultfile --inputType fasta --protease A01.001 --mode UseYourOwnModel --modelfile modelfile --processNum 2```
 ## Output:
 
