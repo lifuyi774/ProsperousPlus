@@ -5,26 +5,26 @@ Proteases contribute to a broad spectrum of cellular functions. Given a relative
 
 ## Environment
 * Anaconda
-* python 3.7.13
+* python 3.7.16
 * JDK 17
 
 ## Dependency
 
 * pandas		1.3.5
-* numpy		1.19.5
+* numpy		1.20.0
 * scikit-learn	0.23.2
-* scipy		1.5.4
+* scipy		1.7.3
 * pycaret	2.3.10
 * shap		0.42.0
 * biopython	1.81
 * matplotlib	3.5.3
 * weblogo	3.7.12
-* catboost 1.2
-* lightgbm 3.3.5
+* catboost 1.1
+* lightgbm 3.3.3
 * xgboost 1.6.2
 * Cython 0.29.36
 * pymrmr 0.1.11
-* redis 4.6.0
+* redis 4.5.5
 
 ## Installation
 1. Download and install Anaconda.
