@@ -132,3 +132,5 @@ if save:
     pl.savefig(path)
     pl.close()
 ```
+## Copyright
+This software is for learning and research purposes only.Do nto user it for commercial purpose.
