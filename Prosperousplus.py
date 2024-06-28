@@ -19,7 +19,6 @@ from zip import zip_folder
 from collections import OrderedDict,Counter
 
 redis_client = redis.Redis(host='localhost', port=6379, db=0)
-
 TrSEQLENGTH=8
 def readData(fastafile, pre,intype,test=False):
     global TrSEQLENGTH
@@ -47,8 +46,7 @@ def readData(fastafile, pre,intype,test=False):
                         labels.append(int(label))
                 fasta_dict['###'] = seqs
                 return fasta_dict, seqName,labels
-            else:
-                
+            else: 
                 seqs = []
                 for record in parse(fastafile, "fasta"):
                     seq = record.seq
