@@ -6,7 +6,7 @@ Proteases contribute to a broad spectrum of cellular functions. Given a relative
 ## Environment
 * Anaconda
 * python 3.7.16
-* JDK 17
+* JDK 1.8
 
 ## Dependency
 
