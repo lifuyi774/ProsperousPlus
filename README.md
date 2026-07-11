@@ -5,26 +5,26 @@ Proteases contribute to a broad spectrum of cellular functions. Given a relative
 
 ## Environment
 * Anaconda
-* python 3.7.16
-* JDK 1.8
+* python 3.7.13
+* JDK 17
 
 ## Dependency
 
 * pandas		1.3.5
-* numpy		1.20.0
+* numpy		1.19.5
 * scikit-learn	0.23.2
-* scipy		1.7.3
+* scipy		1.5.4
 * pycaret	2.3.10
 * shap		0.42.0
 * biopython	1.81
 * matplotlib	3.5.3
 * weblogo	3.7.12
-* catboost 1.1
-* lightgbm 3.3.3
+* catboost 1.2
+* lightgbm 3.3.5
 * xgboost 1.6.2
-* Cython 0.29.35
+* Cython 0.29.36
 * pymrmr 0.1.11
-* redis 4.5.5
+* redis 4.6.0
 
 ## Installation
 1. Download and install Anaconda.
@@ -33,21 +33,27 @@ Proteases contribute to a broad spectrum of cellular functions. Given a relative
 
     See https://docs.anaconda.com/free/anaconda/install/index.html
 
-3. Create the prosperousplus environment.
+2. Create the prosperousplus environment.
 
     ```conda create -n prosperousplus python=3.7```
 
-4. Activate the prosperousplus environment and install the dependencies.
+3. Activate the prosperousplus environment and install the dependencies.
 
     ```conda activate prosperousplus```
 
     ```pip install -r requirements.txt```
-5. Install and configure your java environment.
+
+    ```pip install pycaret==2.3.10 --no-deps```
+
+4. Install and configure your java environment.
 
    See https://docs.oracle.com/en/java/javase/17/install/overview-jdk-installation.html
-6. Install and configure your R enviroment.
+
+5. Install and configure your R enviroment.
 
    See https://cran.r-project.org/manuals.html
+
+6. Install any missing dependencies for pycaret when prompted.
 
 ## Usage
 
@@ -58,11 +64,8 @@ To get the information the user needs to enter for help, run:
 
 as follows:
 
-```cd ProsperousPlus```
-
-```conda activate prosperousplus```
-
 ```python ProsperousPlus.py -h```
+
 >
 usage: it's usage tip.
 >
@@ -72,46 +75,34 @@ optional arguments:
 “--inputType”    fasta or peptide.
 >
 “--config”    The path to the config file.
-  
+
 “--trainfile”    The path to the training set file containing the sequences in fasta(peptide) format, where the length of the sequences is 8, 10, 12, 14, 16, 18 or 20.
-  
+
 “--protease”    The protease you want to predict cleavage to, eg: A01.001, Or if you want to build a new model, please create a name. There should no space in the model name.
                 
 “--outputpath”    The path of output.
-  
+
 “--testfile”    The path to the test set file containing the sequences in fasta(peptide) format, where the length of the sequences is 8, 10, 12, 14, 16, 18 or 20. If not, it will be divided from the training set.
-  
+
 “--predictfile”    The path to the prediction data file containing the sequences in fasta(peptide) format, where the length of the sequences is 8, 10, 12, 14, 16, 18 or 20.
-  
+
 “--mode”    Choose  the program module to run. Three modes can be used: prediction, TrainYourModel, UseYourOwnModel. Only select one mode each time.
-  
+
 “--modelfile”    The path to the trained model generated from the TrainYourModel module. eg 0_model
-  
+
 “--SHAP”    Select Yes or No to control the program to calculate SHAP.
-  
+
 “--PLOT”    Select Yes or No to control whether the program computes the visualization of cleavage sites.
-  
+
 “--processNum”   The number of processes in the program. Note: Integer values represent the number of processes. "processNum" setting can speed up the running efficiency of the program, but it also takes up more computing resources.
 
 ## Examples:
 
 ### Prediction:
-```cd ProsperousPlus```
-
-```conda activate prosperousplus```
-
 ```python ProsperousPlus.py --predictfile predict.fasta --outputpath results --inputType fasta --protease A01.001 --mode prediction --PLOT Yes --processNum 2```
 ### TrainYourModel:
-```cd ProsperousPlus```
-
-```conda activate prosperousplus```
-
 ```python ProsperousPlus.py --trainfile data/A01.001_trainset_1_1.fasta --outputpath resultfile --inputType fasta --protease A01.001 --mode TrainYourModel --SHAP Yes --processNum 2```
 ### UseYourOwnModel:
-```cd ProsperousPlus```
-
-```conda activate prosperousplus```
-
 ```python ProsperousPlus.py --predictfile predict.fasta --outputpath resultfile --inputType fasta --protease A01.001 --mode UseYourOwnModel --modelfile modelfile --processNum 2```
 ## Output:
 
@@ -132,5 +123,15 @@ if save:
     pl.savefig(path)
     pl.close()
 ```
-## Copyright
-This software is for learning and research purposes only. Do not use it for commercial purposes!
+
+## Tips:
+
+1. If you encounter a ”numpy.ndarray size changed “error, please do these:
+
+   `pip uninstall pymrmr `
+
+   Download the pymrmr source code from https://github.com/fbrundu/pymrmr
+
+   `python setup.py build_ext --inplace `
+
+   `python setup.py install `
