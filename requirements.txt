@@ -39,7 +39,6 @@ Pillow==9.5.0
 pipreqs==0.4.13
 plotly==5.18.0
 prompt_toolkit==3.0.48
-pycaret==2.3.10
 Pygments==2.17.2
 pymrmr==0.1.11
 pyod==2.1.0
