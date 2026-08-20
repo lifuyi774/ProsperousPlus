@@ -319,9 +319,9 @@ optional arguments:
 ## Examples:
 
 ### Prediction:
-```python ProsperousPlus.py --predictfile predict.fasta --outputpath results --inputType fasta --protease A01.001 --mode prediction --PLOT Yes --processNum 2```
+```python ProsperousPlus.py --predictfile data/predict.fasta --outputpath results --inputType fasta --protease A01.001 --mode prediction --PLOT Yes --processNum 2```
 ### TrainYourModel:
-```python ProsperousPlus.py --trainfile data/A01.001_trainset_1_1.fasta --outputpath resultfile --inputType fasta --protease A01.001 --mode TrainYourModel --SHAP Yes --processNum 2```
+```python ProsperousPlus.py --trainfile data/train.fasta --outputpath resultfile --inputType fasta --protease A01.001 --mode TrainYourModel --SHAP Yes --processNum 2```
 ### UseYourOwnModel:
 ```python ProsperousPlus.py --predictfile predict.fasta --outputpath resultfile --inputType fasta --protease A01.001 --mode UseYourOwnModel --modelfile modelfile --processNum 2```
 ## Output:
